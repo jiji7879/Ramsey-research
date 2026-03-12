@@ -34,4 +34,7 @@ def write_ramsey_cnf(k, n, num_vertices, filename):
 if __name__ == "__main__":
     # Example: Generating the proof that R(4, 3) <= 9
     # This will create a file that a SAT solver will find UNSATISFIABLE.
-    write_ramsey_cnf(k=3, n=3, num_vertices=6, filename="r33_6.cnf")
+    k = 3
+    n = 3
+    num_vertices = 6
+    write_ramsey_cnf(k, n, num_vertices, filename=f"r{k}_{n}_{num_vertices}.cnf")
